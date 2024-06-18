@@ -16,22 +16,19 @@ namespace RefactoringExample
         public abstract class Animal
         {
             // Common members.
+            public void Speak()
+            {
+                Console.WriteLine("Speak");
+            }
         }
 
         public class Cat : Animal
         {
-            public void Speak()
-            {
-                Console.WriteLine("Meow");
-            }
         }
 
         public class Dog : Animal
         {
-            public void Speak()
-            {
-                Console.WriteLine("Bark");
-            }
+            
         }
     }
 

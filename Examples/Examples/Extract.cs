@@ -9,11 +9,18 @@ namespace RefactoringExample
             int[] numbers = { 1, 2, 3, 4, 5 };
             int sum = 0;
 
+            sum = Sum(numbers, sum);
+            Console.WriteLine(sum);
+        }
+
+        private static int Sum(int[] numbers, int sum)
+        {
             for (int i = 0; i < numbers.Length; i++)
             {
                 sum += numbers[i];
             }
-            Console.WriteLine(sum);
+
+            return sum;
         }
     }
 }

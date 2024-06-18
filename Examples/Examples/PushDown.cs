@@ -16,19 +16,23 @@ namespace RefactoringExample
 
     public abstract class Animal
     {
+    }
+
+    public class Cat : Animal
+    {
+        // Specific members for Cat.
         public void MakeSound()
         {
             Console.WriteLine("Some generic sound");
         }
     }
 
-    public class Cat : Animal
-    {
-        // Specific members for Cat.
-    }
-
     public class Dog : Animal
     {
         // Specific members for Dog.
+        public void MakeSound()
+        {
+            Console.WriteLine("Some generic sound");
+        }
     }
 }

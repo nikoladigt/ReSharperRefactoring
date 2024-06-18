@@ -12,10 +12,11 @@ namespace Examples
         class Shape
         {
             private Point pivot;
-            private void LogDrawing(Logger logger)
+
+            public Point Pivot
             {
-                var msg = $"Shape is drawn at {pivot.X}, {pivot.Y}";
-                logger.Log(msg);
+                set { pivot = value; }
+                get { return pivot; }
             }
         }
         class Logger
@@ -23,6 +24,12 @@ namespace Examples
             public void Log(string msg)
             {
                 // log the message
+            }
+
+            private void LogDrawing(Shape shape)
+            {
+                var msg = $"Shape is drawn at {shape.Pivot.X}, {shape.Pivot.Y}";
+                this.Log(msg);
             }
         }
     }

@@ -9,12 +9,12 @@ namespace Examples
     internal class Rename
     {
 
-        public int Add(int a, int b)
+        public int Add()
         {
-            int x = 10;
-            int y = 5;
-            int z = x + y;
-            return x + y + z;
+            int dollarsNikola = 10;
+            int dollarsIlija = 5;
+            int sumDollars = dollarsNikola + dollarsIlija;
+            return dollarsNikola + dollarsIlija + sumDollars;
         }
     }
 }
